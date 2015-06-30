@@ -11,11 +11,13 @@ techyugadi/hsqldb
 
 # Build
 
-To build your docker using the Dockerfile in this repository copy the Dockerfile to your local machine and run:
+To build your docker using the Dockerfile in this repository copy the Dockerfile  and hsqldb.jar to the same directory on your local machine and run:
 
 sudo docker build -t="your_user/hsqldb" . 
 
 (Replace your_user by your user name)
+
+We have user HSQLDB v2.3.2 here. Replace the jar with a newer one if available.
 
 # Run
 
