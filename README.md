@@ -35,7 +35,7 @@ docker run -it -p 9001:9001 techyugadi/hsqldb --database.0 file:/data/mydb --dbn
 
 You can also create a database with your chosen super-user and password. The way to do this is to pass the database parameters as a server.properties file to HSQLDB (please see HSQLDB documentation). To run your docker in this fashion, you can use a command like:
 
-cd test; docker run -it -p 9001:9001 -v /home/user/dbtest/server.properties:/server.properties techyugadi/hsqldb --props /server.properties
+docker run -it -p 9001:9001 -v /home/user/dbtest/server.properties:/server.properties techyugadi/hsqldb --props /server.properties
 
 Here you are bind-mounting the server.properties file onto /server.propertie in the container. The --props option gets passed on to the command line to start HSQLDB.
 
