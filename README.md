@@ -1,5 +1,5 @@
 # hsqldb_docker
-Dockerfile and other required files to build and run a HSQLDB server.
+Dockerfile and other required files to build and run a HSQLDB server image.
 HSQLDB is a lightweight relational database that maps all data in a database to a files on your local file system and runs on Java. It is suitable for dev and test environments. More info at : http://hsqldb.org/
 
 #Dockerhub
@@ -39,7 +39,7 @@ You can also create a database with your chosen super-user and password. The way
 
 docker run -it -p 9001:9001 -v /home/user/dbtest/server.properties:/server.properties techyugadi/hsqldb --props /server.properties
 
-Here you are bind-mounting the server.properties file onto /server.propertie in the container. The --props option gets passed on to the command line to start HSQLDB.
+Here you are bind-mounting the server.properties file onto /server.properties in the container. The --props option gets passed on to the command line to start HSQLDB.
 
 Your server.properties should include the database URL with preferred user-name and password, as follows:
 
